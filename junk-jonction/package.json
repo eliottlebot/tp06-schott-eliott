@@ -34,6 +34,7 @@
     "@ng-web-apis/platform": "^4.12.2",
     "@ng-web-apis/resize-observer": "^4.12.2",
     "@ng-web-apis/screen-orientation": "^4.12.2",
+    "@ngxs/store": "^20.1.0",
     "lucide-angular": "^0.546.0",
     "postcss": "^8.5.6",
     "rxjs": "~7.8.0",
