@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DeclarePollutionComponent } from '../components/declare-pollution/declare-pollution.component';
 import { PollutionList } from '../components/pollution-list/pollution-list';
 import { PollutionService } from '../services/pollution.service';
 import { HttpClientModule } from '@angular/common/http';
-import { PollutionDetailsModal } from '../components/pollution-details-modal/pollution-details-modal';
+import { PollutionFormComponent } from '../components/pollution-form/pollution-form.component';
 
 const routes = [
-  { path: '', component: DeclarePollutionComponent },
+  { path: '', component: PollutionFormComponent },
   { path: 'list', component: PollutionList },
 ];
 

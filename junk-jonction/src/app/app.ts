@@ -7,7 +7,9 @@ import { HeaderComponent } from '../components/header/header.component';
   selector: 'app-root',
   imports: [PollutionModule, RouterModule, HeaderComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css',
+  host: {
+    class: 'block h-full',
+  },
 })
 export class App {
   protected readonly title = 'Junk Junction';

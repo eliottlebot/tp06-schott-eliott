@@ -1,14 +1,14 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { BehaviorSubject, map, Observable } from 'rxjs';
 import { PollutionService } from '../../services/pollution.service';
-import { AsyncPipe, DatePipe } from '@angular/common';
+import { AsyncPipe, DatePipe, CommonModule } from '@angular/common';
 import { LucideAngularModule, Trash2, Info } from 'lucide-angular';
 import { Pollution } from '../../models/types/Pollution';
 import { PollutionDetailsModal } from '../pollution-details-modal/pollution-details-modal';
 
 @Component({
   selector: 'app-pollution-list',
-  imports: [AsyncPipe, DatePipe, LucideAngularModule, PollutionDetailsModal],
+  imports: [CommonModule, AsyncPipe, DatePipe, LucideAngularModule, PollutionDetailsModal],
   templateUrl: './pollution-list.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
